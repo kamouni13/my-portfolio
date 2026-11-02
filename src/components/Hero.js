@@ -37,7 +37,6 @@ const content = {
     cv: 'Télécharger mon CV',
     contact: 'Me contacter',
     socials: 'Retrouvez-moi sur',
-    available: 'Ouvert aux opportunités',
     role: 'Développement Web Full Stack',
     tech: 'Technologies',
   },
@@ -60,7 +59,7 @@ const content = {
     cv: 'Download my CV',
     contact: 'Contact me',
     socials: 'Find me on',
-    available: 'Open to opportunities',
+ 
     role: 'Full Stack Web Development',
     tech: 'Technologies',
   },
@@ -141,19 +140,6 @@ const Hero = () => {
           transition={{ duration: 0.75, ease: 'easeOut' }}
           className="relative z-10 text-left"
         >
-          {/* Availability status */}
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.5 }}
-            className="mb-7 inline-flex items-center gap-2.5 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-4 py-2 text-sm font-medium text-emerald-700 dark:border-emerald-400/20 dark:bg-emerald-400/10 dark:text-emerald-300"
-          >
-            <span className="relative flex h-2.5 w-2.5">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#10B981] opacity-40" />
-              <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#10B981]" />
-            </span>
-            {t.available}
-          </motion.div>
 
           <p className="mb-3 text-lg font-medium tracking-wide text-[#007DBD] dark:text-cyan-300 sm:text-xl">
             {t.greeting}

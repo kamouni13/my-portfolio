@@ -51,6 +51,19 @@ const translations = {
           'Rapports et suivi des activités',
         ],
       },
+
+      {
+        title: 'Dariva Home & Living',
+        category: 'E-commerce',
+        description:
+          'Plateforme e-commerce dédiée à l’univers de la maison et de la décoration, offrant une expérience de navigation moderne pour découvrir les produits et aménager son intérieur.',
+        features: [
+          'Catalogue de produits',
+          'Présentation des collections',
+          'Interface moderne et élégante',
+          'Navigation intuitive',
+        ],
+      },
       {
         title: 'Personal Portfolio',
         category: 'Portfolio Web',
@@ -65,18 +78,6 @@ const translations = {
           'Design adaptatif',
         ],
       },
-      {
-  title: 'Dariva Home & Living',
-  category: 'E-commerce',
-  description:
-    'Plateforme e-commerce dédiée à l’univers de la maison et de la décoration, offrant une expérience de navigation moderne pour découvrir les produits et aménager son intérieur.',
-  features: [
-    'Catalogue de produits',
-    'Présentation des collections',
-    'Interface moderne et élégante',
-    'Navigation intuitive',
-  ],
-},
       {
         title: 'StockManager',
         category: 'Application Full Stack',
@@ -135,6 +136,19 @@ const translations = {
           'Reports and activity tracking',
         ],
       },
+
+      {
+        title: 'Dariva Home & Living',
+        category: 'E-commerce Website',
+        description:
+          'An e-commerce platform dedicated to home living and decoration, offering a modern browsing experience to explore products and discover interior design inspiration.',
+        features: [
+          'Product catalog',
+          'Collection presentation',
+          'Modern and elegant interface',
+          'Intuitive navigation',
+        ],
+      },
       {
         title: 'Personal Portfolio',
         category: 'Web Portfolio',
@@ -149,18 +163,6 @@ const translations = {
           'Responsive design',
         ],
       },
-    {
-  title: 'Dariva Home & Living',
-  category: 'E-commerce Website',
-  description:
-    'An e-commerce platform dedicated to home living and decoration, offering a modern browsing experience to explore products and discover interior design inspiration.',
-  features: [
-    'Product catalog',
-    'Collection presentation',
-    'Modern and elegant interface',
-    'Intuitive navigation',
-  ],
-},
       {
         title: 'StockManager',
         category: 'Full Stack Application',
@@ -200,8 +202,18 @@ const projects = [
     live: '',
     featured: true,
   },
+
   {
     id: 2,
+    image: darivaImage,
+    tech: ['React', 'Vite', 'JavaScript', 'Tailwind CSS'],
+    icon: <FaHome />,
+    github: 'https://github.com/kamouni13/dariva-home-living',
+    live: 'https://dariva-home-living.vercel.app/',
+    featured: false,
+  },
+  {
+    id: 3,
     image: myportfolioImage,
     tech: ['React', 'JavaScript', 'Tailwind CSS', 'Framer Motion'],
     icon: <FaLaptopCode />,
@@ -209,15 +221,6 @@ const projects = [
     live: 'https://my-portfolio-liart-five-85.vercel.app/',
     featured: false,
   },
- {
-  id: 3,
-  image: darivaImage,
-  tech: ['React', 'Vite', 'JavaScript', 'Tailwind CSS'],
-  icon: <FaHome />,
-  github: 'https://github.com/kamouni13/dariva-home-living',
-  live: 'https://dariva-home-living.vercel.app/',
-  featured: false,
-},
   {
     id: 4,
     image:
@@ -434,7 +437,7 @@ const Projects = () => {
                             <span className="mt-1 shrink-0 text-cyan-600 dark:text-cyan-400">
                               {
                                 featureIcons[
-                                  featureIndex % featureIcons.length
+                                featureIndex % featureIcons.length
                                 ]
                               }
                             </span>
