@@ -311,11 +311,11 @@ const Hero = () => {
             {/* Photo card */}
             <div className="absolute inset-0 overflow-hidden rounded-[1.7rem] border border-white/70 bg-white shadow-2xl shadow-sky-900/10 dark:border-white/10 dark:bg-[#10243B] dark:shadow-black/30">
               <img
-                src={profilePhoto}
-                alt="Mohamed Kamouni"
-                className="h-full w-full object-cover object-center"
-                fetchPriority="high"
-              />
+  src={profilePhoto}
+  alt="Mohamed Kamouni"
+  className="h-full w-full object-cover object-[center_25%]"
+  fetchPriority="high"
+/>
 
               {/* Photo overlay */}
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-white via-white/95 to-transparent p-6 pt-24 dark:from-[#071426] dark:via-[#071426]/90 dark:to-transparent sm:p-7 sm:pt-28">
